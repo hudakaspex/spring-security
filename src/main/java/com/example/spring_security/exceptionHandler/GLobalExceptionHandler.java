@@ -29,7 +29,7 @@ public class GLobalExceptionHandler {
 
         if (exception instanceof AccountStatusException) {
             errorDetail = ProblemDetail.forStatusAndDetail(HttpStatusCode.valueOf(403), exception.getMessage());
-            errorDetail.setProperty("description", "The account is locked");
+            errorDetail.setProperty("description", "The account is locked asas");
         }
 
         if (exception instanceof AccessDeniedException) {
